@@ -1,5 +1,5 @@
 {
-  "name": "functions",
+  "name": "node-ts-new-project",
   "scripts": {
     "build": "tsc",
     "start": "npm run build && cross-env NODE_ENV=production node dist/index.js",
