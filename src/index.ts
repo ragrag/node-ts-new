@@ -30,7 +30,7 @@ class TsNew extends Command {
       this.log('Project ready, happy hacking!');
       this.log('start with: npm run dev');
     } catch (error) {
-      this.log('Something went wrong');
+      this.log('Something went wrong', error);
     }
   }
 
