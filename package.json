@@ -1,7 +1,7 @@
 {
-  "name": "ts-new",
+  "name": "node-ts-new",
   "description": "Create a new Node TypeScript project with eslint, prettier, nodemon",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Raggi @ragrag",
   "bin": {
     "ts-new": "./bin/run"
