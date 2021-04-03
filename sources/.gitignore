@@ -1,6 +1,7 @@
 # Compiled JavaScript files
 dist/**/*.js
 dist/**/*.js.map
+.env
 
 # TypeScript v1 declaration files
 typings/
