@@ -12,7 +12,7 @@ const exec = async (command: string, options: any): Promise<void> => {
 };
 
 class TsNew extends Command {
-  static description = 'describe the command here';
+  static description = '';
 
   static flags = {
     help: flags.help({ char: 'h' }),
