@@ -28,7 +28,7 @@ class TsNew extends Command {
       await this.copyProjectFiles(libFolderPath, workingDirectory);
       await this.installDependencies(workingDirectory);
       this.log('Project ready, happy hacking!');
-      this.log('start with: npm run dev');
+      this.log('start with: npm run watch');
     } catch (error) {
       this.log('Something went wrong', error);
     }

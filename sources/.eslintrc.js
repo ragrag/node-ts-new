@@ -4,23 +4,20 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-  ],
+  extends: ['airbnb-base', 'airbnb-typescript/base', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: ['tsconfig.json', 'tsconfig.dev.json'],
-    sourceType: 'module',
+    project: ['tsconfig.json'],
     tsconfigRootDir: __dirname,
   },
-  ignorePatterns: [
-    '/dist/**/*', // Ignore built files.
-  ],
-  plugins: ['@typescript-eslint', 'import'],
+  ignorePatterns: ['/build/**/*'],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+      },
+    },
+  },
+  plugins: ['prettier'],
   rules: {},
 };

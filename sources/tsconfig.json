@@ -1,20 +1,27 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "lib": ["dom", "es6", "es2017", "esnext.asynciterable","es2020"],
-    "module": "commonjs",
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "declaration": true,
+    "declarationMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "outDir": "dist",
+    "removeComments": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "pretty": true,
     "sourceMap": true,
     "strict": true,
+    "module": "commonjs",
     "moduleResolution": "node",
-    "target": "es6"
+    "target": "es2019",
+    "outDir": "build",
+    "lib": ["es2019", "DOM"]
   },
-  "compileOnSave": true,
-  "include": [
-    "src"
-  ]
+  "exclude": ["node_modules", "build"],
+  "include": ["src/*.ts", "src/**/*.ts"]
 }
-
-
