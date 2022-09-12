@@ -32,6 +32,7 @@
     "prettier": "^2.2.1",
     "prettier-eslint": "^12.0.0",
     "ts-node": "^10.7.0",
-    "typescript": "^4.6.4"
+    "typescript": "^4.6.4",
+    "nodemon": "^2.0.19"
   }
 }
